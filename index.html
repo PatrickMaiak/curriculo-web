@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+        }
+        nav{
+            background-color: rgb(240, 240, 240);
+            box-shadow: 0px 2px 5px gray;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        
+        }
+        nav a{
+            text-decoration: none;
+            margin: 1em;
+            cursor: pointer;
+        }
+        nav a:hover{
+            text-decoration: none;
+            margin: 1em;
+            cursor: pointer;
+            text-shadow: 1px 1px 5px black;
+        }
+        nav p{
+            margin-left: 5px;
+        }
+        nav button{
+            margin-right: 5px;
+        }
+        nav div{
+            display: flex;
+            justify-content: space-between;
+
+        }
+        main{
+            margin-top: 5em;
+           
+        }
+
+        #container1{
+            display: flex;
+            height: 90vh;
+            gap: 15px;
+        }
+        #container1 aside{
+            margin-top: 15vh;
+            border: 1px solid black;
+            width: 30vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #foto{
+            /* padding-bottom: 50px; */
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: -12em;
+            width: 16vw;
+            height: 18vw;
+            border: 1px solid black ;
+            border-radius: 50%;
+            overflow: hidden;
+            
+        }
+
+
+        #container1 section{
+            border: 1px solid black;
+            width: 70vw;
+        }
+
+      
+    </style>
+</head>
+<body>
+    <nav>
+        <p>Patrick maia</p>
+        <div>
+            <a>Inicio</a>    
+            <a>Projetos</a>    
+            <a>Sobre</a>    
+        </div>
+        <button>whats</button>
+    </nav>
+   <main>
+       <div id="container1">
+           <aside>
+               <div id="foto">
+                   <img src="img/MySelf.jpg" width="99%" height="100%" alt="">
+               </div>
+               <h1 style="position: relative; top: -8em;">Desenvolvendo à</h1>
+               <div style="display: flex; position: relative; top: -5em; border:1px solid black ;width: 90%; height: 10%;">
+                <div style="background-color: red; width: 9.09%; height: 100%;">0</div>
+                <div style="background-color: red; width: 9.09%; height: 100%;">2</div>
+                <div style="background-color: rgb(0, 140, 255); width: 9.09%; height: 100%;">0</div>
+                <div style="background-color: rgb(0, 38, 255); width: 9.09%; height: 100%;">3</div>
+                <div style="background-color: rgb(43, 255, 0); width: 9.09%; height: 100%;">0</div>
+                <div style="background-color: rgb(43, 255, 0);  width: 9.09%; height: 100%;">9</div>
+                <div style="background-color: rgb(43, 255, 0);  width: 9.09%; height: 100%;">5</div>
+                <div style="background-color: rgb(174, 0, 255); width: 9.09%; height: 100%;">1</div>
+                <div style="background-color: rgb(174, 0, 255); width: 9.09%; height: 100%;">6</div>
+                <div style="background-color: rgb(251, 255, 0); width: 9.09%; height: 100%;">2</div>
+                <div style="background-color: rgb(251, 255, 0); width: 9.09%; height: 100%;">9</div>
+               </div>
+           </aside>
+           <section></section>
+       </div>
+
+       <div></div>
+
+       <div></div>
+        <!-- <h1>colocar a regra de 3 </h1> -->
+    </main>
+    <script>
+        var dataAtual = new Date();
+
+        var ano = dataAtual.getFullYear();
+        var mes = dataAtual.getMonth() + 1; 
+        var dia = dataAtual.getDate();
+        var hora = dataAtual.getHours();
+        var minuto = dataAtual.getMinutes();
+        var segundo = dataAtual.getSeconds();
+
+     
+        console.log("Dia: " + dia);
+        console.log("Mês: " + mes);
+        console.log("Ano: " + ano);
+        console.log("Hora: " + hora);
+        console.log("Minuto: " + minuto);
+        console.log("Segundo: " + segundo);
+
+    </script>
+</body>
+</html>
