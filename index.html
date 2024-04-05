@@ -86,6 +86,28 @@
             width: 70vw;
         }
 
+        #container2{
+            margin-top: 3em;
+            display: flex;
+            height: 90vh;
+            gap: 15px;
+            border: 1px solid black;
+            background-color: rgb(235, 235, 235);
+        }
+        #container3{ 
+            background-color: rgb(235, 235, 235);
+            margin-top: 3em;
+            display: flex;
+            height: 90vh;
+            gap: 15px;
+            border: 1px solid black;
+        }
+        .timer{
+            font-size: 22px;
+            width: 9.09%;
+            height: 100%;
+        }
+
       
     </style>
 </head>
@@ -107,28 +129,36 @@
                </div>
                <h1 style="position: relative; top: -8em;">Desenvolvendo à</h1>
                <div style="display: flex; position: relative; top: -5em; border:1px solid black ;width: 90%; height: 10%;">
-                <div style="background-color: red; width: 9.09%; height: 100%;">0</div>
-                <div style="background-color: red; width: 9.09%; height: 100%;">2</div>
-                <div style="background-color: rgb(0, 140, 255); width: 9.09%; height: 100%;">0</div>
-                <div style="background-color: rgb(0, 38, 255); width: 9.09%; height: 100%;">3</div>
-                <div style="background-color: rgb(43, 255, 0); width: 9.09%; height: 100%;">0</div>
-                <div style="background-color: rgb(43, 255, 0);  width: 9.09%; height: 100%;">9</div>
-                <div style="background-color: rgb(43, 255, 0);  width: 9.09%; height: 100%;">5</div>
-                <div style="background-color: rgb(174, 0, 255); width: 9.09%; height: 100%;">1</div>
-                <div style="background-color: rgb(174, 0, 255); width: 9.09%; height: 100%;">6</div>
-                <div style="background-color: rgb(251, 255, 0); width: 9.09%; height: 100%;">2</div>
-                <div style="background-color: rgb(251, 255, 0); width: 9.09%; height: 100%;">9</div>
+                <div class="timer" id="1y">1</div>
+                <div class="timer" id="2y">5</div>
+                <div class="timer" id="y">y</div>
+                <div class="timer" id="1d">0</div>
+                <div class="timer" id="2d">3</div>
+                <div class="timer" id="3d">0</div>
+                <div class="timer" id="d">d</div>
+                <div class="timer" id="1h">9</div>
+                <div class="timer" id="2h">5</div>
+                <div class="timer" id="h">h</div>
+                <div class="timer" id="1m">1</div>
+                <div class="timer" id="2m">6</div>
+                <div class="timer" id="m">m</div>
+                <div class="timer" id="1s">2</div>
+                <div class="timer" id="2s">9</div>
+                <div class="timer" id="s">s</div>
                </div>
            </aside>
            <section></section>
        </div>
 
-       <div></div>
+       <div id="container2"></div>
 
-       <div></div>
+       <div id="container3"></div>
         <!-- <h1>colocar a regra de 3 </h1> -->
     </main>
     <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    
+
         var dataAtual = new Date();
 
         var ano = dataAtual.getFullYear();
@@ -138,14 +168,37 @@
         var minuto = dataAtual.getMinutes();
         var segundo = dataAtual.getSeconds();
 
-     
-        console.log("Dia: " + dia);
-        console.log("Mês: " + mes);
-        console.log("Ano: " + ano);
-        console.log("Hora: " + hora);
-        console.log("Minuto: " + minuto);
-        console.log("Segundo: " + segundo);
+        var y1element = document.getElementById("1y")
+        var y2element = document.getElementById("2y")
+        var y1
+        var y2
 
+        if(ano > 2022){
+            ano = ano - 2022
+        }
+        if (ano > 9) {
+            y1 = parseInt(ano.toString().charAt(0));
+            y2 = parseInt(ano.toString().charAt(1));          
+        }
+        else{
+            y1 = 0
+            y2 = ano
+        }
+        y1element.innerHTML = y1;
+        y2element.innerHTML = y2;
+        var dia = 95
+
+        var anomax=365
+
+        if((ano % 4 === 0 && ano % 100 !== 0) || (ano % 400 === 0 )){
+            anomax = 366
+
+            if (dia > anomax){
+                dia = 1
+            }
+
+        }
+    });
     </script>
 </body>
 </html>
