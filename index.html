@@ -5,200 +5,200 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <style>
-        *{
-            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
-        }
-        nav{
-            background-color: rgb(240, 240, 240);
-            box-shadow: 0px 2px 5px gray;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 1000;
-
-
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        
-        }
-        nav a{
-            text-decoration: none;
-            margin: 1em;
-            cursor: pointer;
-        }
-        nav a:hover{
-            text-decoration: none;
-            margin: 1em;
-            cursor: pointer;
-            text-shadow: 1px 1px 5px black;
-        }
-        nav p{
-            margin-left: 5px;
-        }
-        nav button{
-            margin-right: 5px;
-        }
-        nav div{
-            display: flex;
-            justify-content: space-between;
-
-        }
-        main{
-            margin-top: 5em;
-           
-        }
-
-        #container1{
-            display: flex;
-            height: 90vh;
-            gap: 15px;
-        }
-        #container1 aside{
-            margin-top: 15vh;
-            border: 1px solid black;
-            width: 30vw;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        #foto{
-            /* padding-bottom: 50px; */
-            display: flex;
-            justify-content: center;
-            position: relative;
-            top: -12em;
-            width: 16vw;
-            height: 18vw;
-            border: 1px solid black ;
-            border-radius: 50%;
-            overflow: hidden;
+    <link rel="stylesheet" href="src/css/css">
+   
+      
+    <!-- rgb(0, 74, 173) -->
+</head>
+<body >
+    
+    <div id="container" class="container">
+        <header class="navbar">
+            <button class="menu-toggle" id="menuToggle">
+                &#9776; <!-- Ícone de hambúrguer -->
+            </button>
             
-        }
+        </header>
+        <aside id="menuLateral" class="menuLateral">
+            <div class="menuLateralPerfil">
+                <img style="height:50% ; margin: auto;" src="src/img/P (1).png" alt="">
+                <h1 style="height:25% ;margin: auto;">Patrick</h1>
+                <p style="height:25% ; margin: auto;">Web Developer</p>
+            </div>
+            <button onclick="location.href='#sobreMim';">About</button>
+            <button onclick="location.href='#habilidades';">My Skills</button>
+            <button onclick="location.href='#projetos';">Work</button>
+            <button onclick="location.href='#contatos';">Contact</button>
+            <!-- <a class="buton" href="#work">Works</a> -->
+            
+            <div class="menuLateralLinks">
+                <a href="https://github.com/PatrickMaiak"><img src="src/img/github.png" width="60%" height="60%" alt=""></a>
+                <a href="https://www.instagram.com/patrick_maiak/"><img src="src/img/instagram.png" width="60%" height="60% "alt=""></a>
+                <a href="https://www.linkedin.com/in/patrick-maia-kremer?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="src/img/linkedin.png" width="60%" height="60% "alt=""></a>
+               
+            </div>
+            <div class="close-menu" id="closeMenuBtn">&times;</div>
 
+        </aside>
 
-        #container1 section{
-            border: 1px solid black;
-            width: 70vw;
-        }
+        <main id="mainContent" class="main">
+            
+        <div class="containerAbout">
 
-        #container2{
-            margin-top: 3em;
-            display: flex;
-            height: 90vh;
-            gap: 15px;
-            border: 1px solid black;
-            background-color: rgb(235, 235, 235);
-        }
-        #container3{ 
-            background-color: rgb(235, 235, 235);
-            margin-top: 3em;
-            display: flex;
-            height: 90vh;
-            gap: 15px;
-            border: 1px solid black;
-        }
-        .timer{
-            font-size: 22px;
-            width: 9.09%;
-            height: 100%;
-        }
+            <div class="cardFotoNome">
+                
+                <img style="margin: auto;"  width="60%" height="70%" src="src/img/WIN_20240404_15_47_58_Pro.png" alt="Patrick Maia">
+                
+                <div class="containerNome">
+                    <img style="min-height: 45px; height: 80%; width: auto; max-height: 9vh;"  src="src/img/P.png"  alt="P">
+                    <h1 style="font-size: clamp(3rem, 9vh, 5rem); margin: 0; line-height: 1;">ATRICK</h1>
+                </div>
+                <h1 style=" font-size: clamp(3rem, 9vh, 5rem); margin: 0; line-height: 1;">MAIA</h1>
+            </div>
+
+                          
+        </div>
+      
+        <div class="profissao" style="text-align: center;">
+             <h1>Desenvolvedor Web<br>Full Stack</h1>
+        </div>
+
+        <div id="sobreMim"  style="height: 60%; padding: 1em 0em 10em 0em;   clip-path: polygon(0 0, 100% 0%, 100% 72%, 0 100%); color: whitesmoke; background-color: rgb(0, 74, 173); width: 100%; text-align: center;">
+            <h1>
+                Sobre mim
+            </h1>
+            <p>
+                Tenho experiência em desenvolvimento web, meu foco é criar aplicações práticas e eficientes que atendam às necessidades dos usuários.
+            </p>
+            <p>
+                Sou comprometido, adaptável e gosto de trabalhar em equipe. Sempre busco me alinhar aos objetivos da empresa, contribuindo para alcançar resultados de forma eficiente.
+            </p>
+           
+        </div>
+       
+        
+        <div id="habilidades" style="height: 60%; padding: 8em 0em 5em 0em;  clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100% ); color: whitesmoke; background-color: rgb(0, 74, 173); width: 100%; text-align: center;">
+            <h1>Habilidades</h1>
+            <p><strong>Reprodução de Layouts:</strong> Capacidade de transformar qualquer design em interfaces funcionais e responsivas, seguindo fielmente o visual proposto</p>
+            <p><strong>Desenvolvimento de APIs:</strong> Criação de APIs simples utilizando C#, com integração eficiente ao front-end por meio de requisições fetch e manipulação de dados em tempo real.</p>
+            <p><strong>Comunicação e Trabalho em Equipe:</strong> Seis anos de experiência como garçom, desenvolvendo habilidades de comunicação clara e eficaz, além de trabalhar bem em equipe, sempre buscando o melhor atendimento e colaboração para alcançar os objetivos do time.</p>
+            
+        </div>
 
       
-    </style>
-</head>
-<body>
-    <nav>
-        <p>Patrick maia</p>
-        <div>
-            <a>Inicio</a>    
-            <a>Projetos</a>    
-            <a>Sobre</a>    
+        <div class="icones-container">
+            <div class="iconesdiv">
+              <div class="icone">
+                <img src="src/img/icons8-javascript-48.png" alt="JavaScript">
+                <div class="descricao">
+                  <h3>JavaScript</h3>
+                  <p>Linguagem de programação web.</p>
+                  <p>Tempo de experiência: 5 anos.</p>
+                </div>
+              </div>
+              <div class="icone">
+                <img src="src/img/icons8-c-afiado-logotipo-48.png" alt="C#">
+                <div class="descricao">
+                  <h3>C#</h3>
+                  <p>Linguagem para desenvolvimento desktop e web.</p>
+                  <p>Tempo de experiência: 1 anos.</p>
+                </div>
+              </div>
+              <div class="icone">
+                <img src="src/img/icons8-css3-48.png" alt="CSS3">
+                <div class="descricao">
+                  <h3>CSS3</h3>
+                  <p>Estilização de páginas web.</p>
+                  <p>Tempo de experiência: 5 anos.</p>
+                </div>
+              </div>
+              <div class="icone">
+                <img src="src/img/icons8-html-5-48.png" alt="HTML5">
+                <div class="descricao">
+                  <h3>HTML5</h3>
+                  <p>Estruturação de páginas web.</p>
+                  <p>Tempo de experiência: 5 anos.</p>
+                </div>
+              </div>
+              <div class="icone">
+                <img src="src/img/icons8-angularjs-48.png" alt="Angular">
+                <div class="descricao">
+                  <h3>Angular</h3>
+                  <p>Framework para aplicações web.</p>
+                  <p>Tempo de experiência: 6 meses</p>
+                </div>
+              </div>
+              <div class="icone">
+                <img src="src/img/icons8-reagir-40.png" alt="React">
+                <div class="descricao">
+                  <h3>React</h3>
+                  <p>Biblioteca para interfaces de usuário.</p>
+                  <p>Tempo de experiência: 6 meses.</p>
+                </div>
+              </div>
+              <div class="icone">
+                <img src="src/img/icons8-git-48.png" alt="Git">
+                <div class="descricao">
+                  <h3>Git</h3>
+                  <p>Controle de versão.</p>
+                  <p>Tempo de experiência: 3 anos.</p>
+                </div>
+              </div>
+            </div>
         </div>
-        <button>whats</button>
-    </nav>
-   <main>
-       <div id="container1">
-           <aside>
-               <div id="foto">
-                   <img src="img/MySelf.jpg" width="99%" height="100%" alt="">
-               </div>
-               <h1 style="position: relative; top: -8em;">Desenvolvendo à</h1>
-               <div style="display: flex; position: relative; top: -5em; border:1px solid black ;width: 90%; height: 10%;">
-                <div class="timer" id="1y">1</div>
-                <div class="timer" id="2y">5</div>
-                <div class="timer" id="y">y</div>
-                <div class="timer" id="1d">0</div>
-                <div class="timer" id="2d">3</div>
-                <div class="timer" id="3d">0</div>
-                <div class="timer" id="d">d</div>
-                <div class="timer" id="1h">9</div>
-                <div class="timer" id="2h">5</div>
-                <div class="timer" id="h">h</div>
-                <div class="timer" id="1m">1</div>
-                <div class="timer" id="2m">6</div>
-                <div class="timer" id="m">m</div>
-                <div class="timer" id="1s">2</div>
-                <div class="timer" id="2s">9</div>
-                <div class="timer" id="s">s</div>
-               </div>
-           </aside>
-           <section></section>
-       </div>
 
-       <div id="container2"></div>
+        
+        <div id="projetos">
+            <h1>Projetos</h1>
+            <div class="carousel-container">
+                <div class="carousel">
+                  
+                  <div class="carousel-card">
+                    <a href="https://patrickmaiak.github.io/Sistema-de-caixa/" target="_blank">
+                        <img src="src/img/Captura de Tela (9).png" alt="Project 1">
+                    </a>
+                    <h3>Sistema de Caixa</h3>
+                  </div>
+                  
+                  <div class="carousel-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Project 2">
+                    <h3>Project 2</h3>
+                  </div>
+                  
+                  <div class="carousel-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Project 3">
+                    <h3>Project 3</h3>
+                  </div>
+                  
+                </div>
+                <button class="carousel-btn prev" aria-label="Previous">❮</button>
+                <button class="carousel-btn next" aria-label="Next">❯</button>
+              </div>
+   
+        </div>
+       
+      
+        
+        <div id="contatos" class="contatos">
+            <h2 style="margin-bottom: 10px;">Entre em contato</h2>
+            <p style="margin: 5px 0;">Email: <a href="mailto:patrickmaiakremer@gmail.com" style="color: #4CAF50; text-decoration: none;">patrickmaiakremer@gmail.com</a></p>
+            <p style="margin: 5px 0;">Telefone: <a href="tel:+5547992410514" style="color: #4CAF50; text-decoration: none;">(47) 99241-0514</a></p>
+            <p style="margin: 5px 0;">WhatsApp: <a href="https://wa.me/5547992410514" target="_blank" style="color: #4CAF50; text-decoration: none;">Conversar no WhatsApp</a></p>
+            <div style="margin-top: 10px; font-size: 12px;">
+                <p style="margin: 2px 0;">&copy; 2025 Patrick Maia Kremer. Todos os direitos reservados.</p>
+                <p style="margin: 2px 0;">Este site é apenas para demonstração e não reflete projetos comerciais reais.</p>
+            </div>
+        </div>
+      
+            
+        </main>
 
-       <div id="container3"></div>
-        <!-- <h1>colocar a regra de 3 </h1> -->
-    </main>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-    
+    </div>
 
-        var dataAtual = new Date();
-
-        var ano = dataAtual.getFullYear();
-        var mes = dataAtual.getMonth() + 1; 
-        var dia = dataAtual.getDate();
-        var hora = dataAtual.getHours();
-        var minuto = dataAtual.getMinutes();
-        var segundo = dataAtual.getSeconds();
-
-        var y1element = document.getElementById("1y")
-        var y2element = document.getElementById("2y")
-        var y1
-        var y2
-
-        if(ano > 2022){
-            ano = ano - 2022
-        }
-        if (ano > 9) {
-            y1 = parseInt(ano.toString().charAt(0));
-            y2 = parseInt(ano.toString().charAt(1));          
-        }
-        else{
-            y1 = 0
-            y2 = ano
-        }
-        y1element.innerHTML = y1;
-        y2element.innerHTML = y2;
-        var dia = 95
-
-        var anomax=365
-
-        if((ano % 4 === 0 && ano % 100 !== 0) || (ano % 400 === 0 )){
-            anomax = 366
-
-            if (dia > anomax){
-                dia = 1
-            }
-
-        }
-    });
-    </script>
+<script src="src/js/script.js"></script>
 </body>
 </html>
+
+
+
+

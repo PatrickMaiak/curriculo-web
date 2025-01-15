@@ -1,0 +1,429 @@
+
+body{
+  background-color: rgb(46, 46, 46);
+  border: 1px solid black;
+  margin: auto;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 7fr; 
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100vw;
+    height: 100vh; 
+    overflow: hidden;
+    box-sizing: border-box;
+    
+}
+.menuLateral{
+    z-index: 1; 
+    background-color: rgb(39, 39, 39); 
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    min-width:120px;
+    max-width:220px ;
+    
+}
+.menuLateral div{
+    margin-bottom: 10px;
+}
+.menuLateral button:hover{
+    color:  rgb(0, 74, 173);
+}
+.menuLateral button {
+    color: slategray;
+    background-color: transparent;
+    height: 7%;
+    border: 1px solid transparent;
+    border-bottom: 2px solid rgb(46, 46, 46);
+    border-top: 2px solid rgb(46, 46, 46);
+}
+.buton {
+    text-decoration: none;
+    text-align: center;
+    padding: 9%;
+    color: slategray;
+    background-color: transparent;
+    height: 3%;
+    border: 1px solid transparent;
+    border-bottom: 2px solid rgb(46, 46, 46);
+    border-top: 2px solid rgb(46, 46, 46);
+}
+
+.menuLateralPerfil{
+    color: whitesmoke; 
+    background-color: rgb(0, 0, 0); 
+    width: 100%; 
+    height: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.menuLateralLinks{
+    
+    padding: 15%;
+    display: flex;
+    flex-direction: row;
+    
+}
+.menuLateralLinks a {
+    
+    margin: auto;
+}
+.navbar{
+  background-color: transparent;
+}
+.close-menu {
+  background: none;
+  border: none;
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  position: absolute;
+  
+  left: 95px;
+  cursor: pointer;
+}
+
+
+
+
+.cardFotoNome{
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+    
+
+}
+.containerNome{
+  width:100vw ; 
+  background-color: black; 
+  color: whitesmoke; 
+  display: flex; 
+  flex-direction: row; 
+  align-items: center; 
+  justify-content: center;
+}
+.main {
+    overflow: hidden; 
+    overflow-y: scroll; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    background-color: rgb(46, 46, 46); 
+    scroll-behavior: smooth;
+  }
+  
+.main p{
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    line-height: 1.5;
+    text-shadow: 5px 5px 5px black;
+    
+}
+.profissao{
+    cursor: default;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.8vw;
+    margin: 0;
+    padding-bottom: 0.5rem;
+    
+    color: black;
+    transition: all 0.3s ease;
+}
+
+
+
+.profissao h1:hover {
+transform: translate3d(0, -10px, 22px);
+color: rgb(0, 74, 173);
+}
+
+
+
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+  }
+
+  .carousel {
+    display: flex;
+    gap: 16px;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    padding: 20px 0;
+    scrollbar-width: none; /* Ocultar barra de rolagem no Firefox */
+  }
+
+  .carousel::-webkit-scrollbar {
+    display: none; /* Ocultar barra de rolagem no Chrome */
+  }
+
+  .carousel-card {
+    min-width: 300px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex-shrink: 0;
+    transition: transform 0.3s;
+  }
+
+  .carousel-card:hover {
+    transform: translateY(-10px);
+  }
+
+  .carousel-card img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    max-width: 100%;
+    max-height: 200px; /* Ajuste o valor conforme necessário */
+    object-fit: contain; /* Garante que a imagem se ajuste sem distorção */
+  }
+  
+
+  .carousel-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.contatos{
+  
+  width: 100%; 
+  font-size: 0.8em; 
+  background-color: #333; 
+  color: #fff; 
+  padding: 10px; 
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* estilos do carrossel   */
+
+  .carousel-btn.prev {
+    left: 10px;
+  }
+
+  .carousel-btn.next {
+    right: 10px;
+  }
+
+  .carousel-btn:active {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  @media (max-width: 768px) {
+    .carousel-card {
+      min-width: 80%;
+    }
+  }
+
+
+
+
+
+
+  /* estilos dos icones tecnologias */
+
+  .icones-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+  }
+
+  /* Estilização dos ícones */
+  .iconesdiv {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .icone {
+    position: relative;
+    text-align: center;
+  }
+
+  .icone img {
+    width: 48px;
+    height: 48px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+
+  .icone img:hover {
+    transform: scale(1.2); /* Efeito de zoom no hover */
+  }
+
+  
+  .descricao {
+    position: absolute;
+    top: 60px; /* Posiciona a descrição abaixo do ícone */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    width: 200px;
+    text-align: center;
+    z-index: 10;
+  }
+
+  .descricao h3 {
+    margin: 0;
+    font-size: 16px;
+  }
+
+  .descricao p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+
+  
+  .icone:hover .descricao {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 10px); /* Movimenta levemente para baixo */
+  }
+
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .iconesdiv {
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .descricao {
+      width: 150px;
+    }
+  }
+
+
+  @media screen and (min-width: 768px) {
+    .container{
+   
+        grid-template-columns: 1fr 7fr;    
+    }
+    .menuLateral {
+        display: flex;
+        left: 0px; 
+        transition: left 300ms ease;
+    }
+    .menuLateral {
+        left: 0;
+        width: 320px; 
+    }
+
+    .menu-toggle {
+        display: none; 
+    }
+
+  
+    .navbar{
+        display: none;
+    }
+    .close-menu{
+        display: none;
+    }
+}
+
+
+
+/* versão mobile  */
+
+.navbar {
+    z-index: 1;
+    position: absolute;
+    background-color: transparent;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar h1 {
+    margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .container{
+ 
+  grid-template-columns: 1fr;    
+  }
+ 
+  .main {
+      
+      
+      width: 100%;
+  }
+
+  .menuLateral {
+      display: none;
+      left: -250px; /* Menu escondido inicialmente */
+      transition: left 300ms ease;
+  }
+  .menu-toggle {
+  background-color: transparent; 
+  border: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.menu-toggle:focus {
+  outline: none;
+}
+ 
+}
