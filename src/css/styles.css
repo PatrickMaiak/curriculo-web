@@ -425,5 +425,16 @@ color: rgb(0, 74, 173);
 .menu-toggle:focus {
   outline: none;
 }
+#sobreMim{
+  font-size: small;
+
+}
+#habilidades{
+  font-size: small;
+  padding: 13em!important;
+  height: 65%!important;
+  clip-path: polygon(0 33%, 100% 0, 100% 100%, 0 100% )!important;
+  
+}
  
 }
